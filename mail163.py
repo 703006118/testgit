@@ -8,7 +8,8 @@ mailto_list=[]
 mail_host="smtp.163.com:25" 
 mail_user="18081119007@163.com"     
 mail_pass="sao5nian"  
-#mail_postfix="163.com" 
+#mail_postfix="163.com"
+## 
 debug_level=0      
  
 def send_mail(to_list,sub,content):  
@@ -38,7 +39,7 @@ if __name__ == '__main__':
         exit()
  
     if send_mail(mailto_list,sub,content):  
-        print("send ok")  
+        print("send ok!!")  
     else:  
-        print("send fail")
+        print("send fail!!")
 
